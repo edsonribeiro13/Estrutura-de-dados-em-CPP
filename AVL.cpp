@@ -195,6 +195,7 @@ void organizar()
 			raiz = aux2;
 			aux->filhoE = aux2->filhoD;
 			aux2->filhoD = aux;
+			ladoD++;
 		}
 	}
 	
