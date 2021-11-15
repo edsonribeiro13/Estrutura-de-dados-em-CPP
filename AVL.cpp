@@ -41,13 +41,13 @@ int main ()
 				aux2 = raiz->filhoE;
 				tamanho(pontD, pontE, aux, aux2);
 				if ((ladoD - ladoE) > 1 or (ladoD - ladoE) < -1)
-					cout << "\nÁrvore desequilibrada" << endl;
+					cout << "\nÃrvore desequilibrada" << endl;
 				else
-					cout << "\nÁrvore equilibrada" << endl;
+					cout << "\nÃrvore equilibrada" << endl;
 			case '4':
 				break;
 			default:
-				cout << "\nOpção inválida";
+				cout << "\nOpÃ§Ã£o invÃ¡lida";
 		}
 	}
 	
@@ -70,7 +70,7 @@ void inserir ()
 	arvore *aux = raiz;
 	int nume = 0;
 	
-	cout << "Insira o novo número: ";
+	cout << "Insira o novo nÃºmero: ";
 	cin >> nume;
 	
 	if(raiz == NULL){
@@ -122,7 +122,7 @@ void organizar()
 	
 	if ((ladoD - ladoE) > 1){
 		while ((ladoD - ladoE) > 1){
-			aux = raiz->filhoD;
+			aux = raiz->filhoE;
 			aux2 = aux->filhoD;
 			raiz->filhoD = aux2;
 			aux->filhoD = aux2->filhoE;
@@ -132,7 +132,7 @@ void organizar()
 	}
 	else if ((ladoD - ladoE) < -1){
 		while ((ladoD - ladoE) < -1){
-			aux = raiz->filhoD;
+			aux = raiz->filhoE;
 			aux2 = aux->filhoE;
 			raiz = aux2;
 			aux->filhoE = aux2->filhoD;
@@ -227,7 +227,7 @@ void remover()
 	arvore *aux = raiz, *aux2 = raiz, *aux3 = NULL;
 	int nume = 0;
 	
-	cout << "Insira o número a ser removido: ";
+	cout << "Insira o nÃºmero a ser removido: ";
 	cin >> nume;
 	
 	while (5 > 4){
